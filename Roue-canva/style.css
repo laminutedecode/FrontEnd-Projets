@@ -1,0 +1,54 @@
+body {
+    background: #000000;
+    min-height: 100vh;
+  }
+  
+  text{
+    font-family:  Arial, sans-serif;
+    font-size:12px;
+    font-weight: bold;
+    color: #fff !important;
+    pointer-events:none;
+  }
+  
+  #roue{
+    width:500px;
+    height:500px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+  }
+  
+  #roue::before
+  {
+    content: "";
+    display: block;
+    position: absolute;
+    width:102%;
+    height:102%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    z-index: -1;
+  }
+  
+
+
+p{
+     color: #f1f1f1!important;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 200
+
+ 
+  }

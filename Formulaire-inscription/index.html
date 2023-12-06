@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>La Minute de code</title>
+</head>
+<body>
+
+    <div class="bg">
+        <div class="content">
+            <h2>Inscription</h2>
+            <form action="#">
+                <div class="box">
+                    <span><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <input type="text" placeholder="Nom">
+                </div>
+                <div class="box">
+                    <span><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <input type="text" placeholder="Prenom">
+                </div>
+                <div class="box">
+                    <span><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="text" placeholder="E-mail">
+                </div>
+                <div class="box">
+                    <span><ion-icon name="key-outline"></ion-icon></span>
+                    <input onkeyup="trigger()" id="password" type="password" placeholder="Mot de passe">
+                    <span class="eye"><ion-icon name="eye-outline"></ion-icon></span>
+                </div>
+                <div class="indicateurs">
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                </div>
+                <div class="box">
+                    <span><ion-icon name="key-outline"></ion-icon></span>
+                    <input id="confirmPassword" type="password" placeholder="Confirmer mot de passe">
+                </div>
+                <p class="infoPass"></p>
+                <div class="box">
+                    <input type="submit" value="S'inscrire">
+                </div>
+            </form>
+            <p class="info">ou se connecter avec</p>
+            <div class="links">
+                <div class="facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span>Facebook</span>
+                </div>
+                <div class="google">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <span>Google</span>
+                </div>
+            </div>
+            <p class="info">Deja membre ? <a href="#">Connectez-vous !</a></p>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

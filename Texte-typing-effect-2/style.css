@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+
+body {
+font-family: 'Inconsolata', monospace;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+p {
+  font-size: 45px;
+  position: relative;
+  white-space: nowrap;
+  font-weight: lighter;
+ overflow: hidden;
+ animation: typing 3.5s steps(16);
+}
+
+p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background: #000000;
+  right: 0;
+  top: 0;
+  animation: cursor 0.5s infinite;
+}
+
+@keyframes typing {
+  from {width:0}
+  to {width:100%}
+  
+}
+
+@keyframes cursor {
+  0% { opacity: 1}
+  0% { opacity: 0}
+  100% { opacity: 1}
+}

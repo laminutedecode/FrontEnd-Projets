@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>CONCOUR</title>
+</head>
+<body>
+  
+<div class="container">
+  <img class="logo" src="./Logo.png" alt="logo">
+  <h1>TIRAGE AU SORT</h1>
+  <input id="btn" type="button" value="GO" name="aleatoire" onclick="aleatoire()">
+  <!-- <p id="resultat"></p> -->
+  <div class="lds-ripple">
+    <div></div>
+    <div></div>
+  </div>
+  <div id="resultat">
+    <p class="titre"></p>
+    <p class="nom"></p>
+  </div>
+</div>
+
+
+
+
+  <script type="text/javascript">
+    var tabprenom = new Array(  'pimkiz',  'pimkiz', 'pimkiz');
+    var res = document.getElementById('resultat');
+    var btn = document.getElementById('btn');
+    var load = document.querySelector('.lds-ripple div');
+
+    btn.addEventListener('click', function() {
+      load.classList.add('active')
+    
+    setTimeout(function aleatoire() {
+      load.classList.remove('active');
+        var rand = Math.floor(Math.random() * 5);
+        res.innerHTML = `
+        <p class="titre">⭐ Félicitation ⭐ </p>
+        <p class="nom">💪 ${tabprenom[rand]} 💪</p>
+      `
+        // res.innerText  = tabprenom[rand]
+      }, 5000)
+      })
+  </script>
+</body>
+</html>

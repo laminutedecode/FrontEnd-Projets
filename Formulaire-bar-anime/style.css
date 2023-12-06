@@ -1,0 +1,141 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --purple: rgb(80, 3, 96);
+  --gray: #adadad;
+}
+
+body {
+  min-height: 100vh;
+  background: no-repeat center / cover url('./src/img-1.jpg');
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: white;
+  background: rgba(255, 255, 255);
+  box-shadow: 0px 5px 5px 0 rgba(0,0,0,.3);
+  padding: 1rem;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+  border-bottom: 1px solid rgb(218, 214, 214);
+}
+
+.form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.group-input {
+  position: relative;
+  border-bottom: 2px solid var(--gray);
+  margin: 30px 0;
+}
+
+.group-input input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;  
+}
+
+.group-input label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  color: var(--gray);
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: top 0.2s ease-in,
+              color 0.2s ease-in;
+}
+
+.group-input span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--purple);
+  transition: width 0.3s ease-in-out;
+}
+
+.group-input input:focus ~ label,
+.group-input input:valid ~ label {
+  color: var(--purple);
+  top: -5px;
+}
+.group-input input:focus ~ span::before,
+.group-input input:valid ~ span::before {
+  width: 100%;
+}
+
+.mdp {
+  display: inline-block;
+  margin: -5px 0 16px 5px;
+  color: var(--gray);
+  font-style: italic;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.mdp:hover {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  height: 40px;
+  border: 1px solid;
+  background: var(--purple);
+  border-radius: 25px;
+  font-size: 18px;
+  color: #f1f1f1;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin: 1rem auto;
+  transition: border 0.2s ease-in-out,
+              color 0.2s ease-in-out,
+              background 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  background: transparent;
+}
+
+.compte {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.compte a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.compte a:hover {
+  text-decoration: underline;
+}

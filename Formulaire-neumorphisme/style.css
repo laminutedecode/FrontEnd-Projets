@@ -1,0 +1,125 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body,html {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+}
+
+.container {
+    width: 330px;
+    border-radius: 10px;
+    padding: 2rem;
+    background: #f1f1f1;
+    box-shadow: -2px -2px 7px #ffffff,
+                            2px 2px 5px rgba(0,0,0,.1)
+}
+
+.container h2 {
+    text-align: center;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.container form {
+    width: 100%;
+    height: 100%;
+
+}
+.container form .group {
+    width: 100%;
+    height: 60px;
+    margin: 1rem 0;
+    display: flex;
+    position: relative;
+
+}
+.container form .group span {
+    position: absolute;
+    width: 50px;
+    line-height: 60px;
+    position: absolute;
+    margin-left: 1rem;
+    color: #d6d6d6;
+  
+}
+.container form .group input  {
+    width: 100%;
+    height: 100%;
+    padding-left: 2.3rem;
+    outline: none;
+    border: none;
+    color: #a6a6a6;
+    background: #f1f1f1;
+    box-shadow: inset -2px -2px 7px #ffffff,
+                            inset 2px 2px 5px rgba(0,0,0,.1)
+}
+
+::placeholder {
+    color: #d6d6d6;
+}
+
+.container .mdp {
+    width: 100%;
+    height: 10px;
+}
+
+.container .mdp a {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    color: orange;
+    text-align: right;
+}
+.container .mdp a:hover {
+    color: #983f3f;
+}
+
+.container button {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #a7a7a7;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    cursor: pointer;
+    font-weight: bold;
+    background: #f1f1f1;
+    box-shadow: -2px -2px 7px #ffffff,
+                            2px 2px 5px rgba(0,0,0,.1)
+}
+
+.container button:hover {
+    font-size: 15px;
+    box-shadow: inset -2px -2px 7px #ffffff,
+                           inset  2px 2px 5px rgba(0,0,0,.1)
+}
+
+.container .info {
+    color: #a7a7a7;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.container .info a {
+    color: orange;
+}
+.container .info a:hover {
+    color: #983f3f;
+}

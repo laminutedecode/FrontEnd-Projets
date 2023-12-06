@@ -1,0 +1,28 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #4a0f55;
+    
+}
+
+h1{
+  font-size: clamp(40px, 8vw, 120px);
+  background:  url('https://media.giphy.com/media/eJoZAwRN9OI5QjthIE/giphy.gif') ;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: transparent;
+  font: 900px;
+  text-shadow: 3px 4px 4px rgba(0,0,0,.4)
+
+}

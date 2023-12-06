@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Metéo</title>
+</head>
+<body>
+    <h1>Météo</h1>
+    <div class="container">
+        <div class="inputs-group">
+            <h3>Entrez une ville</h3>
+            <input class="city-input" type="text" placeholder="New york, Londres, Tokyo, Paris ...">
+            <button class="btn-search">Rechercher</button>
+            <div class="separator"></div>
+            <button class="btn-location">Utiliser la géolocalisation</button>
+        </div>
+        <div class="data-container">
+            <div class="data-current">
+                <div class="data-details">
+                    <h2> ( _____ )</h2>
+                    <h4>Temp: __°C</h4>
+                    <h4>Vent: __ M/S</h4>
+                    <h4>Humidité: __ %</h4>
+                </div>
+                <!-- <div class="data-icon">
+                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="data-img">
+                    <h4>pluie modérée</h4>
+                </div> -->
+            </div>
+        </div>
+        <div class="data-days">
+            <h2 class="data-other">Autres jours</h2>
+            <ul class="data-cards">
+                <li class="data-card">
+                    <h2> ( _____ )</h2>
+                    <h4>Temp: __°C</h4>
+                    <h4>Vent: __ M/S</h4>
+                    <h4>Humidité: __ %</h4>
+                </li>
+                <li class="data-card">
+                    <h2> ( _____ )</h2>
+                    <h4>Temp: __°C</h4>
+                    <h4>Vent: __ M/S</h4>
+                    <h4>Humidité: __ %</h4>
+                </li>
+                <li class="data-card">
+                    <h2> ( _____ )</h2>
+                    <h4>Temp: __°C</h4>
+                    <h4>Vent: __ M/S</h4>
+                    <h4>Humidité: __ %</h4>
+                </li>
+                <li class="data-card">
+                    <h2> ( _____ )</h2>
+                    <h4>Temp: __°C</h4>
+                    <h4>Vent: __ M/S</h4>
+                    <h4>Humidité: __ %</h4>
+                </li>
+                <li class="data-card">
+                    <h2> ( _____ )</h2>
+                    <h4>Temp: __°C</h4>
+                    <h4>Vent: __ M/S</h4>
+                    <h4>Humidité: __ %</h4>
+                </li>
+                <!-- <li class="data-card">
+                    <h2> (27/08/2023)</h2>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="data-img">
+                    <h4>Temp: 19.19°C</h4>
+                    <h4>Vent: 4.31 M/S</h4>
+                    <h4>Humidité: 79%</h4>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

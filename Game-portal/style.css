@@ -1,0 +1,22 @@
+body{
+	background: black;
+}
+
+#container{
+	background: white;
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -300px;
+}
+
+canvas{
+	position: absolute;
+}
+
+.hide{
+	display: none;
+}

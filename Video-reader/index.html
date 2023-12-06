@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Lecteur vidéo</title>
+</head>
+<body>
+  
+  <div class="container active">
+    <div class="wrapper">
+      <div class="timeline">
+        <div class="progress">
+          <span>00:00</span>
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <ul class="controls-video">
+        <li class="option gauche">
+          <button class="volume"><ion-icon name="volume-high-outline"></ion-icon></button>
+          <input class="volumeRange" type="range" min="0"max="1" step="any">
+          <div class="time">
+            <div class="video-time"><p>00:00</p></div>
+            <div class="video-separator">/</div>
+            <div class="video-duree"> <p>00:00</p> </div>
+          </div>
+        </li>
+        <li class="option center">
+          <button class="retour"><ion-icon name="play-back-outline"></ion-icon></button>
+          <button class="play"><ion-icon name="play-outline"></ion-icon></button>
+          <button class="suivant"><ion-icon name="play-forward-outline"></ion-icon></button>
+        </li>
+        <li class="option droite">
+          <div class="vitesse-content">
+            <button class="vitesse">
+              <ion-icon class="icon-vitesse" name="speedometer-outline"></ion-icon>
+            </button>
+            <ul class="vitesse-option">
+              <li data-speed="2" class="option-vit">2x</li>
+              <li data-speed="1.5" class="option-vit">1.5x</li>
+              <li data-speed="1" class="option-vit active">Normale</li>
+              <li data-speed="0.75" class="option-vit">0.75x</li>
+              <li data-speed="0.5" class="option-vit">0.5x</li>
+            </ul>
+          </div>
+          <button class="pic">
+            <ion-icon name="stop-outline"></ion-icon>
+          </button>
+          <button class="full">
+          <ion-icon name="crop-outline"></ion-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <video src="./src/video-1.mp4"></video>
+  </div>
+
+  
+  
+  <script src="app.js"></script>
+  <!-- icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

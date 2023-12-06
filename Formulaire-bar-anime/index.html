@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulaire</title>
+</head>
+<body>
+  
+<div class="container">
+  <h1>Connexion</h1>
+  <form method="post">
+    <div class="group-input">
+      <input type="text" required id="login">
+      <span></span>
+      <label for="login">Login:</label>
+    </div>
+    <div class="group-input">
+      <input type="password" required id="password">
+      <span></span>
+      <label for="password">Mot de passe:</label>
+    </div>
+    <a class="mdp" href="#">Mot de passe oublié ?</a>
+    <input type="submit" value="login">
+    <div class="compte">Vous êtez pas membre ? <a href="#">Créer un compte</a></div>
+  </form>
+</div>
+
+
+
+
+ <script src="app.js"></script>
+</body>
+</html>

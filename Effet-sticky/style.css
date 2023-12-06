@@ -1,0 +1,38 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(11, 13, 36);
+  color: #f1f1f1;
+}
+.row {
+  display: flex;
+}
+.heading-content {
+  flex-grow: 1;
+}
+
+.heading-content h3 {
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  background: #f1f1f1;
+  color: #333;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+}
+
+img {
+  width: 400px;
+  height: 800px;
+  object-fit: cover;
+}
+
+
+p {
+  margin: 4rem 0;
+}

@@ -1,0 +1,88 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    background: #333;
+}
+
+
+.box {
+    width: 80%;
+    max-width: 850px;
+    height: 500px;
+    margin: 10% auto;
+    box-shadow: 0 5px 2px 0px rgb(0, 0, 0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+img {
+    width:100%;
+    max-width: 850px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.img1 {
+    animation-name: image1;
+    animation-duration: 10s;
+    position: absolute;
+    animation-iteration-count: infinite;
+}
+
+.img2 {
+    animation-name: image2;
+    animation-duration: 10s;
+    position: absolute;
+    animation-iteration-count: infinite;
+}
+.img3 {
+    animation-name: image3;
+    animation-duration: 10s;
+    position: absolute;
+    animation-iteration-count: infinite;
+}
+.img4 {
+    animation-name: image4;
+    animation-duration: 10s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes image1 {
+0% {opacity: 1;}
+25% {opacity: 0;}
+50%{opacity: 0;}
+75%{opacity: 0;}
+100%{opacity: 1;}
+    }
+@keyframes image2 {
+0% {opacity: 0;}
+25% {opacity: 1;}
+50%{opacity: 0;}
+75%{opacity: 0;}
+100%{opacity: 0;}
+    }
+@keyframes image3 {
+0% {opacity: 0;}
+25% {opacity: 0;}
+50%{opacity: 1;}
+75%{opacity: 0;}
+100%{opacity: 0;}
+    }
+@keyframes image4 {
+0% {opacity: 0;}
+25% {opacity: 0;}
+50%{opacity: 0;}
+75%{opacity: 1;}
+100%{opacity: 0;}
+    }

@@ -1,0 +1,65 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>La Minute de code</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Formulaire responsif</h2>
+
+        <form action="./submit.php" method="post" name="formContact" autocomplete="on">
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input name="prenom" type="text" id="prenom" required>
+                    <div class="underline"></div>
+                    <label for="prenom">Prenom</label>
+                </div>
+                <div class="input-data">
+                    <input  name="nom" type="text" id="nom" required>
+                    <div class="underline"></div>
+                    <label for="nom">Nom</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-data">
+                    <input  name="email" type="email" id="email" required>
+                    <label for="email">Email</label>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-data">
+                    <input  name="tel" type="tel" id="tel" required>
+                    <div class="underline"></div>
+                    <label for="tel">Téléphone</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <label for="message">Message</label>
+                    <div class="underline"></div>
+                    <textarea  name="message" id="message" required></textarea>
+                </div>
+                    
+                </div>
+                <button type="submit" name="submit">Envoyer le message</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

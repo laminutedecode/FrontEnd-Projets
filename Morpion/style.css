@@ -1,0 +1,45 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background:  #040505;
+  color: #f1f1f1;
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #f1f1f1;
+  background: #f1f1f1;
+}
+
+.case{
+  aspect-ratio: 1/1;
+  background: #1b0834;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultat {
+  font-size: 30px;
+  font-weight: 300;
+}

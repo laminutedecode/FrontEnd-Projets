@@ -1,0 +1,123 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) [start] repeat(8, minmax(min-content,
+    14rem)) [end] minmax(6rem, 1fr);
+}
+
+.grid {
+grid-column: start / end;
+margin: 12rem 0 12rem 0;
+display: grid;
+grid-template-columns:repeat(auto-fit, minmax(25rem, 1fr));
+grid-gap: 7rem;
+}
+
+.card {
+  position: relative;
+  background: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-row-gap: 3.5rem;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.2)
+}
+
+.card img {
+width: 100%;
+grid-row: 1/ 2;
+grid-column: 1/ -1;
+}
+
+.card h5 {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  align-self: end;
+  justify-self: center;
+  z-index: 3;
+  width: 80%;
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 1.6rem;
+  background: green;
+  color: #f1f1f1;
+  transform: translateY(50%)
+}
+
+.location, .size {
+  margin-top: 2rem;
+}
+
+.location, .size, .pool, .wifi{
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+ion-icon {
+  margin-right: 1rem;
+  font-size: 20px;
+  color: green;
+}
+
+.size p {
+  position: relative;
+  display: inline-block;
+}
+
+.size p::after {
+  content: "2";
+  font-size: 7px;
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
+.prix {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgb(255, 81, 0);
+  color: #f1f1f1;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+
+.prix span {
+  font-size: 12px;
+}
+
+button {
+  grid-column: 1/-1;
+  background: rgb(128, 36, 0);
+  font-weight: bold;
+  color: #f1f1f1;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: background .2s ease-in;
+}
+
+button:hover {
+    background: rgb(37, 11, 0);
+}
+

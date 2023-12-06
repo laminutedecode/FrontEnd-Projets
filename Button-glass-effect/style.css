@@ -1,0 +1,101 @@
+/* #################################### Global */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ min-height: 100vh;
+display: grid;
+place-items: center;
+background: #a4d2e1;
+}
+
+.container-btns {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  padding: 5rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.btn {
+  width: 150px;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 15px;
+  background: salmon;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  top: 1rem;
+  left: 150px;
+  background: rgb(255, 255, 255, 0.2);
+  transform: rotate(130deg);
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 1rem;
+  left: 180px;
+  background: rgb(255, 255, 255, 0.2);
+  transform: rotate(130deg);
+}
+
+.btn:hover {
+  background: rgb(253, 171, 162);
+}
+
+.btn:hover.btn::after {
+  animation: btn-1 0.5s ease-in-out;
+}
+
+.btn:hover.btn::before {
+  animation: btn-2 0.5s ease-in-out;
+}
+
+@keyframes btn-1 {
+  from {
+    left: 150px;
+  }
+
+  to {
+    left: -120px;
+  }
+}
+
+@keyframes btn-2 {
+  from {
+    left: 180px;
+  }
+
+  to {
+    left: -90px;
+  }
+}

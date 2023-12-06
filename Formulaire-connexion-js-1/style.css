@@ -1,0 +1,187 @@
+*, ::before, ::after {
+box-sizing: border-box;
+margin: 0;
+padding:0;
+border-radius: 7px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+ min-height: 100vh;
+display: grid;
+place-items: center;
+background: no-repeat center / cover url('./fond.jpg');
+text-align: center;
+}
+
+
+.container {
+    width: 400px;
+    padding: 60px 40px;
+    background: #f1f1f1;
+    position: relative;
+    box-shadow: 0 5px 5px 0 rgba(255, 255, 255, 0.2);
+}
+
+.container h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+    background: linear-gradient(to right, rgb(215, 136, 243), rgb(52, 52, 195), rgb(124, 54, 149));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.box, form .button{
+    margin: 25px 0;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+.box input {
+    height: 100%;
+    width: 100%;
+   outline: none;
+   background: #f1f1f1;
+   border: 1px solid #d1d1d1;
+   padding-left: 15px;
+   font-size: 18px;
+   transition: border .2s ease-in;
+}
+
+.box label, span.show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box label {
+    left: 15px;
+    pointer-events: none;
+    color: #d1d1d1;
+    font-size: 18px;
+    background: #f1f1f1;
+    padding: 0 0.5rem;
+    transition: transform .2s ease-in-out;
+
+}
+
+span.show {
+    right: 20px;
+    color: #a7a7a7;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+span.show:hover {
+    color:rgb(215, 136, 243)
+}
+
+
+input:focus {
+    border: 1px solid rgb(196, 24, 215);
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-33px);
+    font-size: 16px;
+    color:  rgb(196, 24, 215);
+}
+
+form .button {
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+form .inner {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    background: linear-gradient(to right, rgb(215, 136, 243), rgb(52, 52, 195), rgb(124, 54, 149));
+    left: -100%;
+    z-index: -1;
+    transition: left .4s ease-in-out;
+}
+
+.button button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bold;
+    color: #f1f1f1;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover .inner{
+    left: 0%;
+}
+
+.auth {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    color: #bebebe;
+}
+
+.links {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.facebook, .google {
+height: 40px;
+width: 100%;
+display:flex;
+justify-content: center;
+align-items: center;
+color: #f1f1f1;
+margin: 1rem 0;
+transition: background .2s ease-in-out;
+}
+
+
+.facebook span , .google span {
+    margin-left: .5rem;
+    font-size: 13px;
+    font-weight: bold;
+}
+.facebook {
+    background: #246cb5;
+    color: #f1f1f1;
+    margin-right: 1rem;
+}
+
+.google {
+    background: #c64646;
+}
+
+.facebook:hover {
+    background: #194979;
+}
+.google:hover {
+    background: #692626;
+}
+
+.signup {
+    font-size: 13px;
+    margin-top: 0.5rem;
+    color: #d1d1d1;
+}
+
+.signup a {
+    text-decoration: none;
+    color:rgb(196, 24, 215)
+}
+
+.signup a:hover {
+    color:rgb(124, 54, 149)
+}

@@ -1,0 +1,42 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #5c5c5c;
+    
+}
+
+
+h1 {
+    font-weight: 900;
+    font-size: clamp(35px, 8vw, 70px);
+    background: repeating-linear-gradient(-45deg, rgb(245, 169, 169) 0%, rgb(252, 252, 202) 7.14%, rgb(184, 251, 184) 14.28%,
+    rgb(0,255,255) 21.4%, rgb(196, 250, 250) 28.56%, rgb(149, 149, 240) 35.7%, rgb(237, 160, 237) 42.84%, rgb(242, 190, 190) 50%);
+    background-size: 600vw 600vw;
+    animation: anim 10s linear infinite forwards;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    user-select: none;
+    text-shadow: 2px 2px 5px rgba(214, 214, 214, 0.2);
+    text-shadow: -2px -2px 7px rgba(0,0,0,.2)
+}
+
+
+@keyframes anim {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}

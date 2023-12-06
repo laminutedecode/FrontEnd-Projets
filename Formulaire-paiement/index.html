@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulaire de paiement</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="montant">
+      <img src="./src/image.webp" alt="">
+      <p>1 <strong>Air max</strong>: 120€</p>
+    </div>
+
+
+    <form>
+      <div class="input-groupe">
+        <label for="nom">Nom du titulaire</label>
+        <input type="text" id="nom" name="titulaire" maxlength="30" placeholder="Nom du titulaire">
+      </div>
+      <div class="input-groupe">
+        <label for="numero">Numéro de la carte</label>
+        <input type="text" id="numero" name="titulaire" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="[0-9\s]+">
+      </div>
+
+
+      <div class="securite">
+        <div class="exp">
+          <label for="expiration">Expiration</label>
+          <select name="mois" id="expiration" class="selectExp">
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <span>/</span>
+            <select name="annees" class="selectExp2">
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+              <option value="2032">2032</option>
+              <option value="2033">2033</option>
+              <option value="2034">2034</option>
+            </select>
+        </div>
+
+
+        <div class="secu">
+            <label for="crypto">Cryptogramme</label>
+            <input type="text" name="cryptogramme" id="crypto" maxlength="3" required placeholder="XXX" pattern="[0-9]{3}">
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button>Confirmer le paiement</button>
+      </div>
+    </form>
+  </div>
+  
+
+
+  <script src="app.js"></script>
+</body>
+</html>

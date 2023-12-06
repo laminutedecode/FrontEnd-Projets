@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body, html {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+
+.buttons {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.buttons .row {
+  display: block;
+}
+
+.buttons .row button {
+  display: block;
+  height: 55px;
+  width: 150px;
+  margin: 40px 0;
+  font-weight: 500;
+  text-shadow: 0 -1px 0px rgba(0,0,0,.4);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0 5px 5px 0;
+  transition: all .1s ease-in;
+}
+
+.row button.facebook,
+.row button.facebook span {
+  background: #2760aa;
+  color: #f1f1f1;
+  border-left: 1px solid #183b69;
+  box-shadow: 0 5px 0 0 #163762;
+}
+.row button.instagram,
+.row button.instagram span {
+  background: #d124a9;
+  color: #f1f1f1;
+  border-left: 1px solid #75145e;
+  box-shadow: 0 5px 0 0 #75145e;
+}
+.row button.youtube,
+.row button.youtube span{
+  background: #c81a1a;
+  color: #f1f1f1;
+  border-left: 1px solid #630e0e;
+  box-shadow: 0 5px 0 0 #630e0e;
+}
+.row button.github,
+.row button.github  span {
+  background: #2a2a2a;
+  color: #f1f1f1;
+  border-left: 1px solid #000000;
+  box-shadow: 0 5px 0 0#000000;
+}
+
+.row button span {
+  position: absolute;
+  left: -61px;
+  top: 0;
+  height: 55px;
+  width: 60px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  border-radius: 5px 0 0 5px;
+}
+
+
+.row button:active {
+  top: 3px;
+}
+
+.row button.facebook:active {
+  background:   #163762;
+  box-shadow: 0 2px 0 0 #163762;
+}
+.row button.instagram:active {
+  background:   #75145e;
+  box-shadow: 0 2px 0 0 #75145e;
+}
+.row button.youtube:active {
+  background:   #630e0e;
+  box-shadow: 0 2px 0 0 #630e0e;
+}
+.row button.github:active {
+  background:   #000000;
+  box-shadow: 0 2px 0 0 #000000;
+}
+
+
+.row button:active span {
+  top: -3px;
+}

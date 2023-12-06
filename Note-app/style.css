@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #982222;
+}
+
+.container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 265px);
+    gap: 15px;
+}
+
+li {
+    background: #fff;
+    list-style: none;
+    border-radius: 7px;
+    height: 280px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.2)
+}
+
+.add-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-note p {
+    color: #982222;
+    font-size: 18px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.icon-note {
+    cursor: pointer;
+}
+.icon-note ion-icon {
+    font-size: 40px;
+    color: #982222;
+}
+
+.box-note {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.details-note {
+    
+}
+.details-note p {
+    padding: 1rem;
+    font-size: 20px;
+    background: #f38a8a;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 600;
+    border-radius: 7px 7px 0 0;
+    
+}
+.details-note span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9b9b9b;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.footer-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid #982222;
+   margin: 0 1rem;
+}
+.footer-note span {
+    font-size: 15px;
+    color: #982222;
+    font-style: italic;
+}
+
+.footer-note .options ion-icon {
+    font-size: 18px;
+    color: #9b9b9b;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+.footer-note .options ion-icon:hover {
+    color: #982222;
+}
+.footer-note .options {
+    position: relative;
+}
+.footer-note .options .menu-options {
+    border-radius: 0;
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,.2);
+    position: absolute;
+    bottom: 1rem;
+    right: -1rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f1f1f1;
+    border: 1px solid #e2e2e2;
+    transform: scale(0);
+    transition: transform .2s ease-in-out;
+}
+.footer-note .options .menu-options li {
+    color: #9b9b9b;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    height: 50px;
+    background: none;
+    box-shadow: none;
+    width: 120px;
+    padding: 1rem .5rem ;
+    border-radius: 0;
+}
+
+
+
+.footer-note .options .menu-options li:hover, 
+.footer-note .options .menu-options li:hover ion-icon{
+    color: #982222;
+    background: #e2e2e2;
+}
+
+.footer-note .options:hover .menu-options {
+    transform: scale(1)
+}
+
+
+/* Modal */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+    z-index: 2;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f1f1f1;
+    padding: 1rem;
+    z-index: 4;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+
+.modal-header {
+    border-bottom: 1px solid #982222;
+    position: relative;
+    height: 50px;
+}
+
+.modal-header p {
+    margin-top: 0.5rem;
+    font-size: 22px;
+}
+
+.modal-header ion-icon {
+    position: absolute;
+    top:0;
+    right: 1rem;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.modal form {
+    margin: 15px 25px 35px;
+}
+
+
+
+.modal .row label {
+    display: block;
+    margin-top: 2.5rem;
+}
+
+.modal .row input, .row textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #adadad;
+    font-size: 18px;
+    color: #858585;
+    padding: 1rem 0;
+    background: none;
+}
+
+.row textarea {
+    resize: none;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 1rem;
+    background: #982222;
+    color: #f1f1f1;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: background .2s ease-in-out
+}
+form button:hover {
+    background: #ac3f3f;
+}
+
+.modal-container, .modal {
+    display: none;
+}
+.modal-container.active, .modal-container.active .modal {
+display: block;
+}

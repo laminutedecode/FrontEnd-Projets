@@ -1,0 +1,68 @@
+*, ::before, ::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #010101;
+}
+
+button {
+    position: relative;
+    height: 60px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #f1f1f1;
+    cursor:pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width:calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(253, 160, 160), rgb(250, 253, 152),rgb(179, 254, 114),rgb(135, 248, 227),rgb(81, 99, 234),rgb(237, 168, 253),rgb(165, 22, 22), rgb(167, 63, 63), rgb(242, 168, 49));
+    background-size: 400%;
+    z-index: -1;
+    opacity: 1;
+    filter: blur(5px);
+    transition: opacity .2s ease-in-out;
+    animation: animate 20s linear infinite;
+}
+
+button:hover:before {
+opacity: 1;
+}
+button:hover:active:before {
+    filter: blur(2px);
+}
+
+button:hover:active {
+    background: none;
+    color: #333
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

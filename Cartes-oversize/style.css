@@ -1,0 +1,86 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(213, 213, 213);
+}
+
+.cartes {
+  width: 300px;
+  height: 530px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  margin: 3rem 60px;
+}
+
+.colors {
+  height: 50%;
+  background: #333;
+  background: no-repeat center / cover url('./src/fond.jpg');
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cartes .colors img {
+  width: 300px;
+  position: absolute;
+  top: 80px;
+ left: 50%;
+ transform: translate(-50%,-50%);
+} 
+
+.title {
+  height: 5%;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.info {
+  text-align: justify;
+  height: 30%;
+  padding: 10px 30px 0 30px;
+  line-height: 18px;
+  font-size: 15px;
+}
+
+.box-btn {
+  height: 15%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 15px;
+}
+
+.btn {
+  width: 120px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border: 1px solid midnightblue;
+  color: midnightblue;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color .2s ease-in,
+                  background .2s ease-in;
+}
+
+.btn:hover {
+  background: midnightblue;
+  color:#f1f1f1;
+}

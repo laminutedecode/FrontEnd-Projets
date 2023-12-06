@@ -1,0 +1,81 @@
+
+/*  ------------------- Global ------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial,sans-serif;
+    background: #1C2A4A;
+}
+/*  ------------------- Button------------------- */
+button {
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(60, 60, 231);
+    background: rgb(255, 255, 255);
+    outline: none;
+    box-shadow: 2px 2px 5px #aaa;
+    transition: 0.5s ease-in-out;
+}
+button.active {
+    padding: 15px 80px 100px 80px;
+    border-radius: 25px;
+}
+button span {
+    font-size: 22px;
+    font-weight: 700;
+    color: midnightblue;
+    cursor: pointer;
+}
+button span:hover{
+    color: rgb(103, 121, 223);
+}
+button span.active{
+    display: none;
+}
+button div {
+    display: none;
+}
+button div.active {
+    display: block;
+}
+
+
+/*  ------------------- Close Icons ------------------- */
+button div p {
+    text-align:right;
+    border-bottom: 1px dashed #aaa;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.croix {
+    width: 25px;
+    cursor: pointer;
+}
+.croix:hover{
+    position: relative;
+    top:-5px;
+}
+/*  -------------------Content ------------------- */
+button div ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+button div ul li {
+    text-align: left;
+    font-size:1rem;
+    margin-bottom: 30px;
+}
+button div ul li img {
+    margin-right: 10px;
+}
+.icons img { 
+    width: 20px;
+}

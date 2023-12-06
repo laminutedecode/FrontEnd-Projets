@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: #e0e0e0;
+}
+
+.liste {
+list-style: none;
+}
+
+.liste .button {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+  line-height: 60px;
+ background: #fff;
+ transition: .2s ease-in;
+ overflow: hidden;
+}
+
+.liste .button:hover {
+  width: 200px;
+}
+
+.liste .button  .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 60px;
+}
+
+
+.liste .button  span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+
+}
+
+
+.liste .button:nth-child(1):hover .icon {
+  background: rgb(29, 116, 197);
+  color: #f1f1f1
+}
+.liste .button:nth-child(2):hover .icon {
+  background: rgb(197, 29, 133);
+  color: #f1f1f1
+}
+.liste .button:nth-child(3):hover .icon {
+  background: rgb(11, 11, 11);
+  color: #f1f1f1
+}
+.liste .button:nth-child(4):hover .icon {
+  background: rgb(226, 13, 13);
+  color: #f1f1f1
+}
+.liste .button:nth-child(5):hover .icon {
+  background: rgb(255, 191, 0);
+  color: #f1f1f1
+}

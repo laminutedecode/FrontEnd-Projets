@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background:no-repeat center / cover radial-gradient(rgb(245, 191, 120), rgb(253, 144, 0));
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  min-width: 300px;
+  margin: 5rem auto;
+  padding: 25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  background: #f1f1f1;
+  position: relative;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  border: 3px double orangered;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: orangered;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  text-align:center;
+  line-height: 100px;
+}
+
+.logo span {
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+h1 {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 span {
+  color: orangered;
+}
+
+form {
+  margin-top: 1rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+}
+
+
+.inputs-group label {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.inputs-group input {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid orangered;
+  outline: none;
+  background: none;
+}
+
+
+
+button {
+  width: 150px;
+  height: 30px;
+  border-radius: 50000px;
+  cursor: pointer;
+  margin: 1rem auto;
+  border:none;
+  font-weight: 700;
+  line-height: 30px;
+  color: #f1f1f1;
+  background: orangered;
+  transition: background 0.2s ease-in,
+  color 0.2s ease-in;
+}
+
+button:hover {
+  color: orangered;
+  background: transparent;
+  border: 1px solid orangered
+}
+
+.resultat {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.resultat-text {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 1rem 0;
+}
+
+.resultat-info {
+  font-style: italic;
+  text-align: center;
+}

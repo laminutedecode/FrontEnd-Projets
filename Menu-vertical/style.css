@@ -1,0 +1,120 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(255, 240, 192);
+}
+
+
+.menu {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  min-height: 900px;
+  background: #f1f1f1;
+  z-index: 20;
+  background: rgb(255, 240, 192);
+  border-right: 2px solid midnightblue;
+}
+
+.menu-logo {
+  height: 100px;
+  position: relative;
+  border-bottom: 2px solid midnightblue;
+}
+
+.menu-logo img {
+  width: 80px;
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+ul li {
+  height: 78px;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.items-header {
+  height: 78px;
+  background: rgb(255, 240, 192);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-titre {
+  font-size: 20px;
+}
+
+.items-icon {
+  width: 10px;
+  transition: all .2s ease-in;
+  transform: translateY(-2px)
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+  display: block;
+  padding: 10px 25px;
+  transition: all .2s ease-in;
+}
+
+a:hover {
+  color: midnightblue;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 300px);
+  overflow: auto;
+  padding: 40px;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 3rem 0;
+  border: 2px solid midnightblue;
+}
+
+.content h1 {
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 33px;
+  color: #333;
+}
+
+.content p {
+  line-height: 26px ;
+  margin-bottom: 20px;
+}
+
+.txt::first-letter {
+  font-size: 30px;
+  color: midnightblue
+}
+
+
+.active {
+  height: 242px;
+}
+
+.active-icons {
+  transform: rotate(135deg) translateX(-2px)
+}

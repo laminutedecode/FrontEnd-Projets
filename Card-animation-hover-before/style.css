@@ -1,0 +1,92 @@
+*, ::before, ::after {
+box-sizing: border-box;
+margin: 0;
+padding:0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+    transition: margin-top .2s ease-in-out;
+    padding: 0.5rem;
+    overflow:hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to top, rgb(157, 241, 234), rgb(243, 169, 169));
+    position: absolute;
+    z-index: -1;
+    bottom: -2%;
+    right: -3%;
+    transition: height .2s ease-in-out, width 0.2s ease-in-out;
+  
+}
+
+.content {
+    position: absolute;
+    left: -400px;
+    bottom: .5rem;
+    background: rgba(0,0,0,.8);
+    width: calc(100% - 1rem);
+    height: 80px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+
+    transition: opacity .2s ease-in-out, left .2s ease-in-out .2s;
+    
+}
+
+
+.content h3 {
+margin-bottom: .5rem;
+color: rgb(237, 172, 207);
+font-size: 22px;
+text-transform: uppercase
+}
+
+.content  p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.card:hover {
+    margin-top: -25px;
+}
+
+
+
+.card:hover .content {
+   left: .5rem;
+    opacity: 1;
+}
+
+
+.card:hover::before {
+    width: 400px;
+    height: 500px;
+}

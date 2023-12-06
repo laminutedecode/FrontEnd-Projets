@@ -1,0 +1,61 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(17, 53, 211) 50%, #ffa260 50%);
+}
+
+.container::after {
+content: "";
+display: block;
+min-height: 100vh
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgb(248, 249, 169);
+}
+
+button {
+  background: #433333;
+  color: rgb(248, 249, 169);
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: sticky;
+  top: 0px;
+  /* mix-blend-mode: multiply; */
+  /* mix-blend-mode: lighten; */
+  /* mix-blend-mode: darken; */
+  /* mix-blend-mode: overlay; */
+  /* mix-blend-mode: hard-light; */
+  /* mix-blend-mode: color-burn; */
+  /* mix-blend-mode: difference; */
+  mix-blend-mode: exclusion;
+}

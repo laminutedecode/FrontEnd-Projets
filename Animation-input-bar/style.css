@@ -1,0 +1,86 @@
+*, ::before, ::after {
+box-sizing: border-box;
+margin: 0;
+padding:0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+ min-height: 100vh;
+display: grid;
+place-items: center;
+text-align: center;
+background: #f1f1f1;
+}
+
+.container {
+    width: 420px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,.3)
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+form {
+    margin: 20px 5px 10px 5px;
+}
+
+form .box {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 100%;
+    height: 100%;
+    border:none;
+    border-bottom: 1px solid #d1d1d1;
+    outline: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+form label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #d1d1d1;
+    transition: transform .2s ease-in;
+}
+
+.box .ligne {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #ff4b4b;
+    transition: width .2s ease-in;
+}
+
+.box input:focus  ~ label {
+    transform: translateY(-25px);
+    color: #ff4b4b;
+}
+
+.box input:valid ~ label {
+    transform: translateY(-25px);
+    color: #ff4b4b;
+}
+
+.box input:focus  ~ .ligne {
+    width: 100%;
+}
+.box input:valid ~ .ligne  {
+    width: 100%;
+}
+

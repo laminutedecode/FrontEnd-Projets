@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Random password</title>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Mot de passe</h2>
+    <div class="wrapper">
+      <div class="inp-groupe">
+        <input type="text" >
+        <span class="copy"><ion-icon name="copy-outline"></ion-icon></span>
+      </div>
+        <div class="indicator"></div>
+          <div class="mdp-length">
+            <div class="infos">
+              <label class="title">Longeur mot de passe</label>
+              <span>7</span>
+          </div>
+          <input type="range" min="1" max="30" value="7" step="1">
+          </div>
+            <div class="pass-options">
+               <label class="title">Options</label>
+               <ul class="options">
+                <li class="option">
+                  <input type="checkbox" id="minuscules" checked>
+                  <label for="lowercase">Minuscule (a - z)</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" id="majuscules">
+                  <label for="uppercase">Majuscules(A - Z)</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" id="nombres">
+                  <label for="number">Chiffres (1 - 9)</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" id="symboles">
+                  <label for="symbols">Symboles ('!-@-+-^)</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" id="repetitions">
+                  <label for="repetitions">Exlure la duplication</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" id="espaces">
+                  <label for="espaces">Inclure espaces</label>
+                </li>
+               </ul>
+            </div>
+            <button class="btn-generate">Generer un mot de passe</button>
+       </div>
+      </div>
+  
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

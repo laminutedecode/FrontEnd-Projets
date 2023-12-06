@@ -1,0 +1,161 @@
+body {
+    background: #d1d1d1;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iphone {
+    width: 375px;
+    height: 667px;
+    background:  no-repeat center / cover url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    border-radius: 40px;
+    border: 15px solid #000;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+
+  
+  .screen {
+    width: 100%;
+    height: 80%;
+
+    position: relative;
+  }
+
+
+
+  
+  
+  .home-button {
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 200px;
+    background: #00000088;
+    cursor: pointer;
+    transition: bottom .2s ease-in;
+  }
+
+  .home-button.active {
+    bottom: 0;
+    cursor: default;
+  }
+  
+  .barre {
+    width: 100px;
+    height: 2px;
+    border-radius: 50px;
+    background: #f1f1f1;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  .home-button ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .home-button ul  li {
+    margin: 0 15px;
+  }
+
+  .home-button ul  li ion-icon {
+    font-size: 40px;
+    color: #ffffff86;
+    transition: .5s;
+  }
+
+  ul input {
+    display: none;
+  }
+
+  ul li label {
+    width: 50px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  ul li label::before,   ul li label::after {
+    position: absolute;
+    content: "";
+    border-radius: 50px;
+  }
+
+  ul li label::before {
+    width: 7px;
+    height: 7px;
+    background: #ffffff9e;
+    transition: .5s;
+    z-index: 3;
+  }
+  ul li label::after {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ffffff9e;
+    transition: .5s;
+    z-index: 3;
+  }
+
+  ul li input:checked  ~ label::before {
+    background: #00ffbf;
+  }
+  ul li input:checked  ~ label::after {
+    border: 2px solid #00ffbf;
+  }
+
+  ul li input:checked ~ ion-icon {
+    color: #00ffbf
+  }
+
+  .box-active {
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+background: #f1f1f1b9;
+width: 300px;
+height: 50px;
+border-radius: 20px;
+display:flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+margin-left: -20px;
+transition: all .2s ease-in;
+  }
+
+  .box-active ion-icon {
+    color: white;
+    background: green;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  .box-active span {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: .5rem;
+  }
+
+  .box-active.act {
+    opacity: 1;
+    margin-left: 0;
+  }

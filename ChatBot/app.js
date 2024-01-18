@@ -3,7 +3,7 @@ const chatText = document.querySelector('.chat-input textarea');
 const toggleBtn = document.querySelector('.toggle'); 
 const chatbot = document.querySelector('.chatbot');
 const closeModal = document.querySelector('.header-chatbot ion-icon');
-const API_KEY = "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";
+const API_KEY = "";
 
 const inputHeight = chatText.scrollHeight;
 

@@ -1,0 +1,116 @@
+*,::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  rgb(249, 225, 225);
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    position: relative;
+}
+
+.container header {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.container header label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    z-index: 5;
+    margin: 0 1rem;
+}
+
+
+
+.slider {
+    position: absolute;
+    height: 85%;
+    border-radius: inherit;
+    transform: translateX(-50%);
+    transition: all .2s ease-in-out;
+}
+
+#tab1:checked  ~ header label:nth-child(1), 
+#tab2:checked  ~   header label:nth-child(2), 
+#tab3:checked ~ header label:nth-child(3) {
+    background: #f1f1f1;
+    transform: scale(0.9)
+}
+
+
+#tab1:checked ~ header .slider {
+    left: 0%;
+    transform: translateX(5%);
+    width: 90px;
+}
+#tab2:checked ~ header .slider {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+}
+#tab3:checked ~ header .slider {
+    left: 100%;
+    transform: translateX(-105%);
+    width: 95px;
+}
+
+.container input[type="radio"]{
+    display: none;
+}
+
+.grids {
+    overflow: hidden;
+}
+
+.card {
+    width: 300%;
+    display: flex;
+}
+
+.card .row {
+    width: 33.4%;
+}
+
+.card .row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .row1 {
+    transition: margin-left .2s ease-in-out
+}
+
+#tab1:checked ~  .grids .card .row1 {
+    margin-left: 0%;
+}
+#tab2:checked ~   .grids .card .row1{
+    margin-left: -33.4%;
+}
+#tab3:checked ~   .grids .card .row1 {
+    margin-left: -66.8%;
+}
+
+

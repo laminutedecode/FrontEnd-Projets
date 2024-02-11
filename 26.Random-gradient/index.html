@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dégradé app</title>
+</head>
+<body>
+  
+
+<div class="container">
+  <div class="group">
+    <label for="color1">#f1f1f1</label>
+    <input class="color-input" type="color" id="color1">
+  </div>
+  <div class="group">
+    <label for="color2">#f1f1f1</label>
+    <input class="color-input" type="color" id="color2">
+  </div>
+  <div class="range-group">
+    <label for="orientation">
+      <span>Orientation:</span>  
+      <span class="orientation-number">90</span>
+    </label>
+    <input type="range" value="90" min="0" max="360" class="input-rang" id="orientation">
+  </div>
+  <div class="btns">
+    <button class="btn copy">Copier</button>
+    <button class="btn aleatoire">Aléatoire</button>
+  </div>
+</div>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>

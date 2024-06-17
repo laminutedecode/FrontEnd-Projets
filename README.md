@@ -1,6 +1,90 @@
-# Projets HTML, CSS et JavaScript
+# Projets Front-End en HTML, CSS et JavaScript
 
-Ce répertoire contient plusieurs projets créés en utilisant HTML, CSS et JavaScript. Chaque projet est une page web ou une application interactive développée avec ces technologies.
+## Description
+Ce référentiel contient divers projets front-end réalisés en HTML, CSS, et JavaScript natif, présentés sur la chaîne YouTube [Nom de votre chaîne YouTube]. Chaque projet est organisé dans un dossier distinct et contient les fichiers sources ainsi que les instructions pour reproduire le projet.
+
+## Contenu
+
+1. **Input Bar Animation**
+   - Animation de barre de saisie.
+
+2. **Words Game**
+   - Jeu de mots interactif.
+
+3. **Cinema Reservation**
+   - Système de réservation de places de cinéma.
+
+4. **Quizz Country**
+   - Quiz sur les pays du monde.
+
+5. **Calculatrice**
+   - Calculatrice fonctionnelle.
+
+6. **Cookies**
+   - Gestion des cookies avec JavaScript.
+
+7. **Cocktail App**
+   - Application de recherche de cocktails.
+
+8. **Home Ecovie**
+   - Page d'accueil pour un site écologique.
+
+9. **Home Photographe**
+   - Page d'accueil pour un portfolio de photographe.
+
+10. **Galerie Filtrable**
+    - Galerie d'images avec filtres.
+
+11. **Colors Generator**
+    - Générateur de palettes de couleurs.
+
+12. **Home Timer**
+    - Minuteur sur la page d'accueil.
+
+13. **Card Responsives**
+    - Cartes responsives.
+
+14. **Piano**
+    - Clavier de piano interactif.
+
+15. **Todo List**
+    - Liste de tâches.
+
+16. **Card Animation**
+    - Animation de cartes.
+
+17. **Indicateur Password**
+    - Indicateur de force de mot de passe.
+
+18. **Formulaire**
+    - Formulaire avec validation.
+
+19. **Slider**
+    - Carousel d'images.
+
+20. **Loader**
+    - Animation de chargement.
+
+21. **List Draggable**
+    - Liste d'éléments glissables.
+
+22. **Textarea Autoresize**
+    - Textarea avec redimensionnement automatique.
+
+23. **SVG Animation**
+    - Animation SVG.
+
+24. **Cards Hover**
+    - Effets de survol sur les cartes.
+
+25. **Slider Blog**
+    - Carousel pour articles de blog.
+
+26. **Background Animation**
+    - Animation d'arrière-plan.
+
+27. **Digital Hours**
+    - Horloge numérique.
 
 ## Utilisation
 
